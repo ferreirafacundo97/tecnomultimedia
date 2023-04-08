@@ -1,0 +1,25 @@
+ PImage imagen;
+ int px, py;
+ 
+ void setup () {
+   size(800,400);
+   imagen = loadImage("H1.png");
+   imagen.resize (400,400);
+ }
+   
+ void draw (){
+   background (255,255,255);
+   image(imagen, 400, 0, 400, 400);
+   stroke(255,50,50);
+
+//extremo izquierdo
+ beginShape();
+
+
+endShape();
+ }
+ 
+ void mousePressed() {
+   println (("vertex ("+mouseX + ","+ mouseY+");"));
+   
+ }
